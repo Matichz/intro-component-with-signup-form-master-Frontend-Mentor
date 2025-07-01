@@ -6,24 +6,24 @@ const validForm = () => {
         
         const inputs = {
             "input-first-name": {
-                valueInput: form.name.value,
-                claseMsgError: 'msg-error-name',
-                claseIcorError: 'icon-error-name'
+                valueInput: form.firstName.value,
+                claseMsgError: 'msg-error-firstName',
+                claseIconError: 'icon-error-firstName'
             },
             "input-last-name": {
                 valueInput: form.lastName.value,
                 claseMsgError: 'msg-error-lastname',
-                claseIcorError: 'icon-error-lastname'
+                claseIconError: 'icon-error-lastname'
             },
             "input-email": {
                 valueInput: form.email.value,
                 claseMsgError: 'msg-error-email',
-                claseIcorError: 'icon-error-email'
+                claseIconError: 'icon-error-email'
             },
             "input-password": {
                 valueInput: form.password.value,
                 claseMsgError: 'msg-error-password',
-                claseIcorError: 'icon-error-password'
+                claseIconError: 'icon-error-password'
             }  
         }
     
@@ -34,7 +34,7 @@ const validForm = () => {
 
             document.querySelector(`.${input[1].claseMsgError}`).style.display = emptyInput ? 'block' : 'none';
 
-            document.querySelector(`.${input[1].claseIcorError}`).style.display = emptyInput ? 'flex' : 'none';
+            document.querySelector(`.${input[1].claseIconError}`).style.display = emptyInput ? 'flex' : 'none';
         })  
     })
 }
